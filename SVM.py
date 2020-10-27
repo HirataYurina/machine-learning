@@ -1,7 +1,15 @@
+# -*- coding:utf-8 -*-
+# author:平手友梨奈ii
+# e-mail:1353593259@qq.com
+# datetime:1993/12/01
+# filename:SVM.py
+# software: PyCharm
+
 import time
 import numpy as np
 import math
 import random
+
 
 '''
 数据集：Mnist
