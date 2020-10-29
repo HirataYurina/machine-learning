@@ -43,3 +43,4 @@
 ## ToDO
 
 * [x] 支持向量机
+* [x] AdaBoost
