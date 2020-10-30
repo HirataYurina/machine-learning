@@ -1,0 +1,14 @@
+# -*- coding:utf-8 -*-
+# author:平手友梨奈ii
+# e-mail:1353593259@qq.com
+# datetime:1993/12/01
+# filename:MCMC_gibbs_sampling.py
+# software: PyCharm
+
+import numpy as np
+
+"""
+    马尔科夫蒙特卡洛算法
+    Gibbs sampling
+"""
+
