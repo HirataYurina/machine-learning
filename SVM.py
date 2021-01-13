@@ -14,6 +14,7 @@ import random
 '''
 数据集：Mnist
 训练集数量：60000(实际使用：1000)
+使用60000个训练数据集内存会爆
 测试集数量：10000（实际使用：100)
 ------------------------------
 运行结果：
@@ -415,7 +416,7 @@ if __name__ == '__main__':
 
     # 获取训练集及标签
     print('start read transSet')
-    results_ = load_data(r'C:\Users\Administrator\.keras\datasets\mnist.npz')
+    results_ = load_data(r'C:\Users\Administrator\.keras\mnist.npz')
     # print(results)
     x_train_ = results_['x_train'].reshape(60000, -1)
     y_train_ = results_['y_train']
@@ -427,6 +428,7 @@ if __name__ == '__main__':
     # 初始化SVM类
     print('start init SVM')
     svm = SVM(x_train_[:1000], y_train_[:1000], 10, 200, 0.001)
+    # svm = SVM(x_train_, y_train_, 10, 200, 0.001)
 
     # 开始训练
     print('start to train')
@@ -435,6 +437,7 @@ if __name__ == '__main__':
     # 开始测试
     print('start to test')
     accuracy = svm.test(x_test_[:100], y_test_[:100])
+    # accuracy = svm.test(x_test_, y_test_)
     print('the accuracy is:%d' % (accuracy * 100), '%')
 
     # 打印时间

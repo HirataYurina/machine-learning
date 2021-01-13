@@ -109,10 +109,11 @@ MH算法的采样样本会停留，而Gibbs sampling的采样样本不会被拒�
 * [x] AdaBoost
 * [x] MCMC算法（MH，Gibbs sampling）
 * [ ] Bagging
-* [ ] Random Forest
-* [ ] Decision Tree
+* [x] Random Forest
+* [x] Decision Tree
 * [x] Gibbs Sampling
 * [ ] k近邻
 * [ ] 奇异值分解
 * [ ] 主成分分析
 * [ ] 潜在狄利克雷分布
+* [ ] 隐马尔科夫链
