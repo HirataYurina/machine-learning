@@ -38,6 +38,9 @@ def load_data(file_path):
 
 
 class BayesInfer:
+    """
+        TODO: 使用look up效率更高，免去重复计算。
+    """
 
     def __init__(self, train_data, train_labels):
         self.train_data = train_data
