@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c7e2c1-5bbf-4b65-8a38-505c4099d4aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HMM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/max_entropy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/machine-learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/machine-learning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bayes_inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/bayes_inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HMM.py" beforeDir="false" afterPath="$PROJECT_DIR$/HMM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +47,8 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.bayes_inference">
-    <configuration name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.HMM">
+    <configuration name="EM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,7 +61,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EM.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="HMM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="machine-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HMM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,28 +136,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random_forest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="machine-learning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/random_forest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HMM" />
+        <item itemvalue="Python.EM" />
         <item itemvalue="Python.bayes_inference" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.my_dt" />
-        <item itemvalue="Python.random_forest" />
-        <item itemvalue="Python.SVM" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +204,8 @@
       <workItem from="1610326409421" duration="5403000" />
       <workItem from="1610412224086" duration="19845000" />
       <workItem from="1610499530908" duration="19103000" />
-      <workItem from="1610587287849" duration="11798000" />
+      <workItem from="1610587287849" duration="11841000" />
+      <workItem from="1610672480858" duration="11382000" />
     </task>
     <task id="LOCAL-00001" summary="add author">
       <created>1603775523859</created>
@@ -239,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610604770674</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="yyds">
+      <created>1610618446382</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610618446382</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,10 +264,10 @@
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="592" y="159" key="#xdebugger.evaluate/0.0.1549.832@0.0.1549.832" timestamp="1610594308884" />
-    <state x="396" y="8" key="CommitChangelistDialog2" timestamp="1610604769828">
+    <state x="396" y="8" key="CommitChangelistDialog2" timestamp="1610618445520">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="396" y="8" key="CommitChangelistDialog2/0.0.1549.832@0.0.1549.832" timestamp="1610604769828" />
+    <state x="396" y="8" key="CommitChangelistDialog2/0.0.1549.832@0.0.1549.832" timestamp="1610618445520" />
     <state width="1452" height="438" key="DebuggerActiveHint" timestamp="1610514132906">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
@@ -277,54 +280,54 @@
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="555" y="171" key="FileChooserDialogImpl/0.0.1549.832@0.0.1549.832" timestamp="1610432392181" />
-    <state width="1505" height="204" key="GridCell.Tab.0.bottom" timestamp="1610604702805">
+    <state width="1505" height="204" key="GridCell.Tab.0.bottom" timestamp="1610687416790">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610604702805" />
-    <state width="1505" height="204" key="GridCell.Tab.0.center" timestamp="1610604702805">
+    <state width="1505" height="204" key="GridCell.Tab.0.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
+    <state width="1505" height="204" key="GridCell.Tab.0.center" timestamp="1610687416790">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.center/0.0.1549.832@0.0.1549.832" timestamp="1610604702805" />
-    <state width="1505" height="204" key="GridCell.Tab.0.left" timestamp="1610604702805">
+    <state width="1505" height="204" key="GridCell.Tab.0.center/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
+    <state width="1505" height="204" key="GridCell.Tab.0.left" timestamp="1610687416790">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.left/0.0.1549.832@0.0.1549.832" timestamp="1610604702805" />
-    <state width="1505" height="204" key="GridCell.Tab.0.right" timestamp="1610604702805">
+    <state width="1505" height="204" key="GridCell.Tab.0.left/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
+    <state width="1505" height="204" key="GridCell.Tab.0.right" timestamp="1610687416790">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.right/0.0.1549.832@0.0.1549.832" timestamp="1610604702805" />
-    <state width="1505" height="2" key="GridCell.Tab.1.bottom" timestamp="1610599801721">
+    <state width="1505" height="204" key="GridCell.Tab.0.right/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
+    <state width="1505" height="2" key="GridCell.Tab.1.bottom" timestamp="1610618472751">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610599801721" />
-    <state width="1505" height="2" key="GridCell.Tab.1.center" timestamp="1610599801721">
+    <state width="1505" height="2" key="GridCell.Tab.1.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
+    <state width="1505" height="2" key="GridCell.Tab.1.center" timestamp="1610618472751">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.center/0.0.1549.832@0.0.1549.832" timestamp="1610599801721" />
-    <state width="1505" height="2" key="GridCell.Tab.1.left" timestamp="1610599801721">
+    <state width="1505" height="2" key="GridCell.Tab.1.center/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
+    <state width="1505" height="2" key="GridCell.Tab.1.left" timestamp="1610618472751">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.left/0.0.1549.832@0.0.1549.832" timestamp="1610599801721" />
-    <state width="1505" height="2" key="GridCell.Tab.1.right" timestamp="1610599801721">
+    <state width="1505" height="2" key="GridCell.Tab.1.left/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
+    <state width="1505" height="2" key="GridCell.Tab.1.right" timestamp="1610618472751">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.right/0.0.1549.832@0.0.1549.832" timestamp="1610599801721" />
+    <state width="1505" height="2" key="GridCell.Tab.1.right/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
     <state x="284" y="48" key="SettingsEditor" timestamp="1610590654219">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="284" y="48" key="SettingsEditor/0.0.1549.832@0.0.1549.832" timestamp="1610590654219" />
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1610604772290">
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1610618448226">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.832@0.0.1549.832" timestamp="1610604772290" />
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.832@0.0.1549.832" timestamp="1610618448226" />
     <state width="781" height="423" key="XDebugger.FullValuePopup" timestamp="1610522848044">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state width="781" height="423" key="XDebugger.FullValuePopup/0.0.1549.832@0.0.1549.832" timestamp="1610522848044" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1610587292228">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1610672556042">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1549.832@0.0.1549.832" timestamp="1610587292228" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1549.832@0.0.1549.832" timestamp="1610672556042" />
     <state x="464" y="207" key="git4idea.merge.GitPullDialog" timestamp="1610587724466">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
@@ -371,7 +374,9 @@
     <SUITE FILE_PATH="coverage/machine_learning$bayes_inference.coverage" NAME="bayes_inference Coverage Results" MODIFIED="1610599941558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$random_forest.coverage" NAME="random_forest Coverage Results" MODIFIED="1610433818690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$my_dt.coverage" NAME="my_dt Coverage Results" MODIFIED="1610523094743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$HMM.coverage" NAME="HMM Coverage Results" MODIFIED="1610687413348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$decision_tree.coverage" NAME="decision_tree Coverage Results" MODIFIED="1603937910192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$EM.coverage" NAME="EM Coverage Results" MODIFIED="1610680427649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1610590691031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$MCMC_gibbs_sampling.coverage" NAME="MCMC_gibbs_sampling Coverage Results" MODIFIED="1604285040266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
