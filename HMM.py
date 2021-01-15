@@ -74,7 +74,7 @@ def get_best_roads(prob_sequence, end_road, state_matrix):
         end_road = find_pre_node(prob_sequence[i], state_matrix, end_road)
         best_roads.append(end_road)
 
-    return best_roads
+    return best_roads.reverse()
 
 
 if __name__ == '__main__':
