@@ -4,3 +4,9 @@
 # datetime:1993/12/01
 # filename:em.py
 # software: PyCharm
+
+
+import numpy as np
+import time
+
+

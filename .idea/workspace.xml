@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62c7e2c1-5bbf-4b65-8a38-505c4099d4aa" name="Default Changelist" comment="">
+    <list default="true" id="62c7e2c1-5bbf-4b65-8a38-505c4099d4aa" name="Default Changelist" comment="1.15 fix a bug">
+      <change afterPath="$PROJECT_DIR$/logistic_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HMM.py" beforeDir="false" afterPath="$PROJECT_DIR$/HMM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EM.py" beforeDir="false" afterPath="$PROJECT_DIR$/EM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/max_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/max_entropy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.HMM">
+  <component name="RunManager">
     <configuration name="EM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="my_dt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="max_entropy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,7 +129,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/my_dt.py" />
+      <option name="SCRIPT_NAME" value="F:\百度云下载\2019深度学习\2020代码\machine-learning\max_entropy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.max_entropy" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.HMM" />
         <item itemvalue="Python.EM" />
         <item itemvalue="Python.bayes_inference" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.my_dt" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +207,8 @@
       <workItem from="1610412224086" duration="19845000" />
       <workItem from="1610499530908" duration="19103000" />
       <workItem from="1610587287849" duration="11841000" />
-      <workItem from="1610672480858" duration="11382000" />
+      <workItem from="1610672480858" duration="13226000" />
+      <workItem from="1610931900646" duration="18542000" />
     </task>
     <task id="LOCAL-00001" summary="add author">
       <created>1603775523859</created>
@@ -242,7 +245,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610618446382</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.15 add hmm">
+      <created>1610695337904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610695337904</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.15 fix a bug">
+      <created>1610698788355</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610698788355</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,25 +270,27 @@
     <MESSAGE value="MCMC" />
     <MESSAGE value="MH algorithm" />
     <MESSAGE value="yyds" />
-    <option name="LAST_COMMIT_MESSAGE" value="yyds" />
+    <MESSAGE value="1.15 add hmm" />
+    <MESSAGE value="1.15 fix a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.15 fix a bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="367" y="74" key="#Notifications" timestamp="1603774952261">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="367" y="74" key="#Notifications/0.0.1549.832@0.0.1549.832" timestamp="1603774952261" />
-    <state x="592" y="159" key="#xdebugger.evaluate" timestamp="1610594308884">
+    <state x="592" y="159" key="#xdebugger.evaluate" timestamp="1610947400048">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="592" y="159" key="#xdebugger.evaluate/0.0.1549.832@0.0.1549.832" timestamp="1610594308884" />
-    <state x="396" y="8" key="CommitChangelistDialog2" timestamp="1610618445520">
+    <state x="592" y="159" key="#xdebugger.evaluate/0.0.1549.832@0.0.1549.832" timestamp="1610947400048" />
+    <state x="396" y="8" key="CommitChangelistDialog2" timestamp="1610962740409">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="396" y="8" key="CommitChangelistDialog2/0.0.1549.832@0.0.1549.832" timestamp="1610618445520" />
-    <state width="1452" height="438" key="DebuggerActiveHint" timestamp="1610514132906">
+    <state x="396" y="8" key="CommitChangelistDialog2/0.0.1549.832@0.0.1549.832" timestamp="1610962740409" />
+    <state width="1452" height="187" key="DebuggerActiveHint" timestamp="1610947924866">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1452" height="438" key="DebuggerActiveHint/0.0.1549.832@0.0.1549.832" timestamp="1610514132906" />
+    <state width="1452" height="187" key="DebuggerActiveHint/0.0.1549.832@0.0.1549.832" timestamp="1610947924866" />
     <state x="148" y="65" key="DiffContextDialog" timestamp="1603774939032">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
@@ -280,54 +299,54 @@
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="555" y="171" key="FileChooserDialogImpl/0.0.1549.832@0.0.1549.832" timestamp="1610432392181" />
-    <state width="1505" height="204" key="GridCell.Tab.0.bottom" timestamp="1610687416790">
+    <state width="1505" height="425" key="GridCell.Tab.0.bottom" timestamp="1610948280781">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
-    <state width="1505" height="204" key="GridCell.Tab.0.center" timestamp="1610687416790">
+    <state width="1505" height="425" key="GridCell.Tab.0.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610948280781" />
+    <state width="1505" height="425" key="GridCell.Tab.0.center" timestamp="1610948280781">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.center/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
-    <state width="1505" height="204" key="GridCell.Tab.0.left" timestamp="1610687416790">
+    <state width="1505" height="425" key="GridCell.Tab.0.center/0.0.1549.832@0.0.1549.832" timestamp="1610948280781" />
+    <state width="1505" height="425" key="GridCell.Tab.0.left" timestamp="1610948280781">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.left/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
-    <state width="1505" height="204" key="GridCell.Tab.0.right" timestamp="1610687416790">
+    <state width="1505" height="425" key="GridCell.Tab.0.left/0.0.1549.832@0.0.1549.832" timestamp="1610948280781" />
+    <state width="1505" height="425" key="GridCell.Tab.0.right" timestamp="1610948280781">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="204" key="GridCell.Tab.0.right/0.0.1549.832@0.0.1549.832" timestamp="1610687416790" />
-    <state width="1505" height="2" key="GridCell.Tab.1.bottom" timestamp="1610618472751">
+    <state width="1505" height="425" key="GridCell.Tab.0.right/0.0.1549.832@0.0.1549.832" timestamp="1610948280781" />
+    <state width="1505" height="20" key="GridCell.Tab.1.bottom" timestamp="1610947942063">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
-    <state width="1505" height="2" key="GridCell.Tab.1.center" timestamp="1610618472751">
+    <state width="1505" height="20" key="GridCell.Tab.1.bottom/0.0.1549.832@0.0.1549.832" timestamp="1610947942063" />
+    <state width="1505" height="20" key="GridCell.Tab.1.center" timestamp="1610947942063">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.center/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
-    <state width="1505" height="2" key="GridCell.Tab.1.left" timestamp="1610618472751">
+    <state width="1505" height="20" key="GridCell.Tab.1.center/0.0.1549.832@0.0.1549.832" timestamp="1610947942063" />
+    <state width="1505" height="20" key="GridCell.Tab.1.left" timestamp="1610947942063">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.left/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
-    <state width="1505" height="2" key="GridCell.Tab.1.right" timestamp="1610618472751">
+    <state width="1505" height="20" key="GridCell.Tab.1.left/0.0.1549.832@0.0.1549.832" timestamp="1610947942063" />
+    <state width="1505" height="20" key="GridCell.Tab.1.right" timestamp="1610947942063">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state width="1505" height="2" key="GridCell.Tab.1.right/0.0.1549.832@0.0.1549.832" timestamp="1610618472751" />
+    <state width="1505" height="20" key="GridCell.Tab.1.right/0.0.1549.832@0.0.1549.832" timestamp="1610947942063" />
     <state x="284" y="48" key="SettingsEditor" timestamp="1610590654219">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="284" y="48" key="SettingsEditor/0.0.1549.832@0.0.1549.832" timestamp="1610590654219" />
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1610618448226">
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1610698791131">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.832@0.0.1549.832" timestamp="1610618448226" />
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.832@0.0.1549.832" timestamp="1610698791131" />
     <state width="781" height="423" key="XDebugger.FullValuePopup" timestamp="1610522848044">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state width="781" height="423" key="XDebugger.FullValuePopup/0.0.1549.832@0.0.1549.832" timestamp="1610522848044" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1610672556042">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1610931910039">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1549.832@0.0.1549.832" timestamp="1610672556042" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1549.832@0.0.1549.832" timestamp="1610931910039" />
     <state x="464" y="207" key="git4idea.merge.GitPullDialog" timestamp="1610587724466">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
@@ -374,10 +393,11 @@
     <SUITE FILE_PATH="coverage/machine_learning$bayes_inference.coverage" NAME="bayes_inference Coverage Results" MODIFIED="1610599941558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$random_forest.coverage" NAME="random_forest Coverage Results" MODIFIED="1610433818690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$my_dt.coverage" NAME="my_dt Coverage Results" MODIFIED="1610523094743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/machine_learning$HMM.coverage" NAME="HMM Coverage Results" MODIFIED="1610687413348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$HMM.coverage" NAME="HMM Coverage Results" MODIFIED="1610697918305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$max_entropy.coverage" NAME="max_entropy Coverage Results" MODIFIED="1610948152584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$decision_tree.coverage" NAME="decision_tree Coverage Results" MODIFIED="1603937910192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$EM.coverage" NAME="EM Coverage Results" MODIFIED="1610680427649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1610590691031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1610939564482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$MCMC_gibbs_sampling.coverage" NAME="MCMC_gibbs_sampling Coverage Results" MODIFIED="1604285040266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

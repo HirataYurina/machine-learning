@@ -106,14 +106,17 @@ MH算法的采样样本会停留，而Gibbs sampling的采样样本不会被拒�
 ## ToDO
 
 * [x] 支持向量机
+* [x] 隐马尔科夫链
 * [x] AdaBoost
 * [x] MCMC算法（MH，Gibbs sampling）
-* [ ] Bagging
+* [x] Bagging
 * [x] Random Forest
 * [x] Decision Tree
-* [x] Gibbs Sampling
+* [x] Bayes Inference
+* [x] Logistic Regression
+* [x] Exception Maximum
+* [x] Maximum Entropy
 * [ ] k近邻
 * [ ] 奇异值分解
 * [ ] 主成分分析
 * [ ] 潜在狄利克雷分布
-* [x] 隐马尔科夫链
