@@ -146,7 +146,7 @@ def iis_train(train_data,
         ep = [0] * n
         num = len(train_data)
         for i in range(num):
-            # 这里在计算ep的时候，我们需要注意一个点，由于pw(y|x)是模拟模型，所以模型预测的结果我们是不知道的
+            # 这里在计算ep期望的的时候，我们需要注意一个点，由于pw(y|x)是模拟模型，所以模型预测的结果我们是不知道的
             # 因此，我们需要计算pw(0|x)和pw(1|x)（因为我们不知道概率模型预测的标签是哪个）
             for j in range(len(train_data[0])):
                 pwyx = [0] * 2
@@ -158,12 +158,13 @@ def iis_train(train_data,
                     ep[key2index[j][(train_data[i][j], 1)]] += 1 / num * pwyx[1]
 
         # 计算ep
-        ep_ = cal_ep_(n, num, len(train_data[0]), fixy)
+        ep_ = cal_ep_(n, num, len(train_data[0]), fixy, key2index)
 
         sigmas = [0] * n
         for k in range(n):
             sigmas[k] = 1 / M * np.log(ep_[k] / ep[k])
         # 更新w
+        # 算法6.1更新w值
         w = [w[i] + sigmas[i] for i in range(n)]
 
     return w
@@ -180,8 +181,27 @@ def get_search_dic(fixy):
     return xy2id
 
 
-def cal_accuracy():
-    pass
+def predict(data,
+            w,
+            fixy,
+            xy2id):
+    pw1_x = cal_pwy_x(fixy, data, 1, xy2id, w)
+    if pw1_x > 0.5:
+        return 1
+    else:
+        return 0
+
+
+def cal_accuracy(test_data, test_labels, w, fixy, xy2id):
+    right = 0
+    num_data = len(test_data)
+
+    for i, d in enumerate(test_data):
+        prediction = predict(d, w, fixy, xy2id)
+        if prediction == test_labels[i]:
+            right += 1
+
+    return right / num_data
 
 
 if __name__ == '__main__':
@@ -212,6 +232,10 @@ if __name__ == '__main__':
                   steps=100,
                   fixy=fixy,
                   n=n)
+
+    # 模型评估
+    accuracy = cal_accuracy(x_test_[:10], y_test_[:10], w, fixy, xy2id)
+    print('accuracy is %f' % accuracy)
 
     # 打印时间
     print('time span:', time.time() - start)
