@@ -10,7 +10,9 @@ import time
 from collections import defaultdict
 
 """
-    
+    最大熵模型由于其训练过程中嵌套迭代过多，
+    直接导致训练时间较长，在accuracy和speed之间trade off，
+    最大熵模型学习模型不推荐工程应用。
 """
 
 
@@ -186,7 +188,9 @@ def predict(data,
             fixy,
             xy2id):
     pw1_x = cal_pwy_x(fixy, data, 1, xy2id, w)
-    if pw1_x > 0.5:
+    pw0_x = cal_pwy_x(fixy, data, 0, xy2id, w)
+    # 比较大小，相似于softmax
+    if pw1_x > pw0_x:
         return 1
     else:
         return 0
