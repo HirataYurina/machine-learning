@@ -105,18 +105,18 @@ MH算法的采样样本会停留，而Gibbs sampling的采样样本不会被拒�
 
 ## ToDO
 
-* [x] 支持向量机
+* [x] 支持向量机 优点：最优秀的机器学习算法，识别精度高，具有可解释性，计算量不大 缺点：对核函数和超参数敏感
 * [x] 隐马尔科夫链
-* [x] AdaBoost
+* [x] AdaBoost 优点：最常用的集成学习算法，实现简单，可以降低模型偏差 缺点：对离群点敏感                    
 * [x] MCMC算法（MH，Gibbs sampling）
 * [x] Bagging
-* [x] Random Forest
-* [x] Decision Tree
-* [x] Bayes Inference
-* [x] Logistic Regression
+* [x] Random Forest 优点：实现简单，降低模型的偏差，减小过拟合风险
+* [x] Decision Tree 优点：可解释性强、计算量小、实现简单 缺点：容易过拟合，识别精度不高
+* [x] Bayes Inference 优点：数据集小的时候依然有效，容易实现 缺点：精度较低
+* [x] Logistic Regression 优点：模型容易理解，精度还不错，计算复杂度不高
 * [x] Exception Maximum
-* [x] Maximum Entropy
-* [ ] k近邻
-* [ ] 奇异值分解
-* [ ] 主成分分析
+* [x] Maximum Entropy 优点：模型挺复杂 缺点：嵌套循环过多，计算量很大，不适合工程应用
+* [ ] k近邻 优点：对噪声不敏感，容易实现 缺点：计算复杂度高，空间复杂度高
+* [x] 奇异值分解
+* [x] 主成分分析
 * [ ] 潜在狄利克雷分布

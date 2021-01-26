@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62c7e2c1-5bbf-4b65-8a38-505c4099d4aa" name="Default Changelist" comment="1.15 fix a bug">
-      <change afterPath="$PROJECT_DIR$/logistic_regression.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EM.py" beforeDir="false" afterPath="$PROJECT_DIR$/EM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/max_entropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/max_entropy.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/decision_tree.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/SVM.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/max_entropy.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -49,7 +47,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.bayes_inference">
     <configuration name="EM" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="machine-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -347,10 +345,10 @@
       <screen x="0" y="0" width="1549" height="832" />
     </state>
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1549.832@0.0.1549.832" timestamp="1610931910039" />
-    <state x="464" y="207" key="git4idea.merge.GitPullDialog" timestamp="1610587724466">
+    <state x="464" y="207" key="git4idea.merge.GitPullDialog" timestamp="1611631666027">
       <screen x="0" y="0" width="1549" height="832" />
     </state>
-    <state x="464" y="207" key="git4idea.merge.GitPullDialog/0.0.1549.832@0.0.1549.832" timestamp="1610587724466" />
+    <state x="464" y="207" key="git4idea.merge.GitPullDialog/0.0.1549.832@0.0.1549.832" timestamp="1611631666027" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -396,8 +394,9 @@
     <SUITE FILE_PATH="coverage/machine_learning$HMM.coverage" NAME="HMM Coverage Results" MODIFIED="1610697918305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$max_entropy.coverage" NAME="max_entropy Coverage Results" MODIFIED="1610948152584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$decision_tree.coverage" NAME="decision_tree Coverage Results" MODIFIED="1603937910192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$max_entropy__1_.coverage" NAME="max_entropy (1) Coverage Results" MODIFIED="1611105191231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$EM.coverage" NAME="EM Coverage Results" MODIFIED="1610680427649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1610939564482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/machine_learning$test.coverage" NAME="test Coverage Results" MODIFIED="1611024924785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/machine_learning$MCMC_gibbs_sampling.coverage" NAME="MCMC_gibbs_sampling Coverage Results" MODIFIED="1604285040266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
