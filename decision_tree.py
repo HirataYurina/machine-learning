@@ -10,7 +10,7 @@ import numpy as np
 
 '''
     使用算法ID3
-    不适用剪枝
+    不使用剪枝
     训练数据集60000
     测试数据集10000
     决策树准确率：85.89%
@@ -29,7 +29,6 @@ def load_data(file_path):
     # TODO: 对图像进行二值化，这样每个节点分支只有0和1两种情况
     results['x_train'] = np.where(results['x_train'] > 128, 1, 0)
     results['x_test'] = np.where(results['x_test'] > 128, 1, 0)
-    # 建立一个二分类支持向量机，将数字0设置为正类，其他数字设置为负类
     return results
 
 
@@ -121,12 +120,14 @@ class DecisionTree:
         #    实例数最大的类Ck作为该节点的类标记，返回T。
         # (6)否则，依照Ag=ai对D进行分割，
         #    将Di中实例数最大的类作为该子节点的类标记
-        # (7)对第i个子节点，以Di为训练集，A-Ag为特征集，
+        # (7)对第i个子节点，以Di为训练集，A-(减去)Ag为特征集，
         #    递归调用第1-6步骤
         # ################################################
         # 如果特征集为空集，则直接返回实例数最大的类别
-        if len(train_data) == 0:
+        if len(feature_ids) == 0:
             return self.find_max_class(train_labels)
+        if len(train_data) == 0:
+            return None
         train_labels_uniq = set([x for x in train_labels])
         # 如果只有唯一标签值，则直接返回该标签值
         if len(train_labels_uniq) == 1:
@@ -173,7 +174,7 @@ class DecisionTree:
 
 
 if __name__ == '__main__':
-    res = load_data(r'C:\Users\Administrator\.keras\mnist.npz')
+    res = load_data(r'C:\Users\Administrator\.keras\datasets\mnist.npz')
     print('载入数据成功！')
     x_test = res['x_test'].reshape(-1, 28 * 28)  # (10000, 784)
     y_test = res['y_test']  # (10000,)

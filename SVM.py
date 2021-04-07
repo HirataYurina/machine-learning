@@ -416,7 +416,7 @@ if __name__ == '__main__':
 
     # 获取训练集及标签
     print('start read transSet')
-    results_ = load_data(r'C:\Users\Administrator\.keras\mnist.npz')
+    results_ = load_data(r'C:\Users\Administrator\.keras\datasets\mnist.npz')
     # print(results)
     x_train_ = results_['x_train'].reshape(60000, -1)
     y_train_ = results_['y_train']
